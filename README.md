@@ -36,3 +36,4 @@ root                    (project root folder)
 ## Authors
 ---
 * TODO: Add your names and emails here
+Cameron Frisby: fri19004@byui.edu
