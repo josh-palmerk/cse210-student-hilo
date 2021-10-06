@@ -5,10 +5,10 @@ class Player:
     def __init__(self):
         self.points = 300
 
-    def can_Draw(self):
+    def Can_Draw(self):
         pass
 
-    def get_points(self):
+    def Get_Points(self):
         pass
 
-    
+
