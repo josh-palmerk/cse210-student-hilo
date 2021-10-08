@@ -18,7 +18,7 @@ class Director:
 
     def get_inputs(self):
         """ """
-        print(f"The current card is {self.deck.current_card}")
+        print(f"The current card is {self.deck.next_card}")
         
         
         self.player.player_guess()
@@ -31,7 +31,7 @@ class Director:
 
     def do_outputs(self):
         """outputs score, current card value"""
-        print(f"\nThe card that was pulled was a {self.deck.current_card}")
+        print(f"\nThe card that was pulled was a {self.deck.next_card}")
         print(f"Your score is: {self.score}")
         
         if self.player.can_draw():

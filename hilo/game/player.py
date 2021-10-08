@@ -26,7 +26,7 @@ class Player():
     #     """
     #     pass
 
-    def get_points(self, guess, drawn_card, prev_card):
+    def get_points(self, guess, current_card, next_card):
         """
         Calculates points subtracted or added based on success or failure to guess card.
         params:
@@ -39,14 +39,16 @@ class Player():
         """
         points_owed = 0
 
+        print(next_card,current_card)
+
         if guess.lower() == "higher":
-            if drawn_card >= prev_card:
+            if next_card >= current_card:
                 points_owed = 100
             else:
                 points_owed = -75
 
         elif guess.lower() == "lower":
-            if drawn_card <= prev_card:
+            if next_card <= current_card:
                 points_owed = 100
             else:
                 points_owed = -75
