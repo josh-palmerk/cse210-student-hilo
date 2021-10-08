@@ -34,8 +34,9 @@ class Director:
         print(f"\nThe card that was pulled was a {self.deck.current_card}")
         print(f"Your score is: {self.score}")
         
-        if self.player.can_draw():
+        if self.player.can_draw() == True:
             choice = input("Do you want to draw again? [y/n] ")
             self.keep_playing = (choice == "y")
         else:
             self.keep_playing = False
+            print ("Thanks for playing!")
