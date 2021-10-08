@@ -25,7 +25,7 @@ class Director:
         self.deck.draw_card()
 
     def do_updates(self):
-        points = self.player.get_points(self.player.higher_or_lower, self.deck.next_card, self.deck.current_card)
+        points = self.player.get_points(self.player.higher_or_lower, self.deck.current_card, self.deck.next_card)
         self.score += points
         
 
