@@ -51,7 +51,6 @@ class Player():
             else:
                 points_owed = -75
 
-        self.points += points_owed
         return points_owed
 
 

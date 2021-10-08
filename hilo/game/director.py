@@ -4,7 +4,7 @@ from game.deck import Deck
 class Director:
     def __init__(self):
         self.keep_playing = True
-        self.score = 0
+        self.score = 300
         self.player = Player()
         self.deck = Deck()
         
@@ -24,7 +24,7 @@ class Director:
         
 
     def do_updates(self):
-        points = self.player.get_points()
+        points = self.player.get_points(self.player.higher_or_lower, self.deck.next_card, self.deck.current_card)
         self.score += points
         
 
