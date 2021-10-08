@@ -7,6 +7,7 @@ class Director:
         self.score = 0
         self.player = Player()
         self.deck = Deck()
+        
 
 
     def start_game(self):
@@ -17,7 +18,10 @@ class Director:
 
     def get_inputs(self):
         """ """
+        print(f"The current card is {self.deck.current_card}")
+        self.player.player_guess()
         self.deck.draw_card()
+        
 
     def do_updates(self):
         points = self.player.get_points()
@@ -26,10 +30,11 @@ class Director:
 
     def do_outputs(self):
         """outputs score, current card value"""
-        print(f"\nYou rolled: {self.thrower.dice}")
+        print(f"\n'The card that was pulled was a  {self.deck.current_card}")
         print(f"Your score is: {self.score}")
-        if self.deck.can_draw():
-            choice = input("Do you want to continue? [y/n] ")
+        
+        if self.player.can_draw():
+            choice = input("Do you want to draw again? [y/n] ")
             self.keep_playing = (choice == "y")
         else:
             self.keep_playing = False

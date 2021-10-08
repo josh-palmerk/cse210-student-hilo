@@ -17,6 +17,8 @@ class Player():
         Initializes and sets attributes
         """
         self.points = 300
+        self.higher_or_lower = ""
+        """We need to have self attrubutes for drawn card and previous card.. possibly"""
 
     # def draw_card(self):
     #     """
@@ -64,3 +66,8 @@ class Player():
             return False
         else:
             return True
+
+    def player_guess(self):
+        print("Do you think the next card is going to be higher or lower than the curren card?")
+        self.higher_or_lower = input(print("Please input higher or lower : "))
+        
