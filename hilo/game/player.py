@@ -68,6 +68,6 @@ class Player():
             return True
 
     def player_guess(self):
-        print("Do you think the next card is going to be higher or lower than the curren card?")
-        self.higher_or_lower = input(print("Please input higher or lower : "))
+        print("Do you think the next card is going to be higher or lower than the current card?")
+        self.higher_or_lower = input("Please input higher or lower : ")
         

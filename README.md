@@ -37,3 +37,4 @@ root                    (project root folder)
 ---
 * TODO: Add your names and emails here
 Josh Palmer pal19011@byui.edu
+Joseh Cheney Che20001@byui.edu
