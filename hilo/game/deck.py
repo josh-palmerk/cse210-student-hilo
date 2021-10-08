@@ -7,10 +7,13 @@ class Deck:
     """We might need to add a self.current card or something like that so we can use it in the director"""
     """We also need a function that will change the new card to the current card. Not sure how you want to go about doing that"""
     def draw_card(self):
-        self.current_card = self.next_card
-        next_card_position = random.randint(0, 51)
-        if self.deck[next_card_position]:
-            self.next_card = self.deck[next_card_position]
-        elif not self.deck[next_card_position]:
-            self.draw_card()
+        if self.current_card:
+            self.current_card = self.next_card
+            next_card_position = random.randint(0, 51)
+            if self.deck[next_card_position]:
+                self.next_card = self.deck[next_card_position]
+            elif not self.deck[next_card_position]:
+                self.draw_card()
+        else:
+            self.current_card = random.randint(1,13)
         return self.next_card
