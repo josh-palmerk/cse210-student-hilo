@@ -35,7 +35,6 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your names and emails here
 Josh Palmer pal19011@byui.edu
 Joseh Cheney Che20001@byui.edu
 Cameron Frisby fri19004@byui.edu
