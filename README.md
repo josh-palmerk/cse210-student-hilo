@@ -39,4 +39,5 @@ root                    (project root folder)
 Josh Palmer pal19011@byui.edu
 Joseh Cheney Che20001@byui.edu
 Cameron Frisby fri19004@byui.edu
+Dallin Hatton hat18010@byui.edu
 
