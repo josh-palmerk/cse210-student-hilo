@@ -39,8 +39,6 @@ class Player():
         """
         points_owed = 0
 
-        print(next_card,current_card)
-
         if guess.lower() == "higher":
             if next_card >= current_card:
                 points_owed = 100
