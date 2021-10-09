@@ -36,7 +36,7 @@ root                    (project root folder)
 ## Authors
 ---
 Josh Palmer pal19011@byui.edu
-Joseh Cheney Che20001@byui.edu
+Joseph Cheney Che20001@byui.edu
 Cameron Frisby fri19004@byui.edu
 Dallin Hatton hat18010@byui.edu
 

@@ -67,6 +67,13 @@ class Player():
             return True
 
     def player_guess(self):
+        valid = False
         print("Do you think the next card is going to be higher or lower than the current card?")
-        self.higher_or_lower = input("Please input higher or lower : ")
+        while not valid:
+            user_hilo = input("Please input higher or lower: ")
+            if user_hilo.lower() == 'higher' or user_hilo.lower() == 'lower':
+                valid = True
+            else:
+                print('Please guess either higher or lower. Ties are a win.\n')
+        self.higher_or_lower = user_hilo.lower()
         
