@@ -54,14 +54,14 @@ class Player():
         return points_owed
 
 
-    def can_draw(self):
+    def can_draw(self,point):
         """
         Determines ability to keep playing.
         CURRENTLY BASED OFF OF player.points !! Please alert me to change it if necessary
 
         return: bool
         """
-        if self.points <= 0:
+        if point <= 0:
             return False
         else:
             return True
